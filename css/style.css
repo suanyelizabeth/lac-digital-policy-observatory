@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2933;
+
+}
+
+.site-header {
+  padding: 32px 12%;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: calc(100vh - 150px);
+}
+
+.sidebar {
+  padding: 24px;
+  background:#f8fafc;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar input,
+.sidebar select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 18px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.app-container{
+    display:flex;
+    height:calc(100vh - 140px);
+}
+
+.sidebar{
+    width:320px;
+}
+
+.site-header{
+    padding:20px 60px;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Basic project index structure" />
+  <title>Caribbean Digital Policy Observatory</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>LAC  Digital Policy Observatory</h1>
+     <p>Interactive map of digital policy actors, regulations and capacities in Latin America and the Caribbean.</p>
+    </div>
+  </header>
+<main class="app-container">
+
+  <aside class="sidebar">
+
+    <h2>Filters</h2>
+
+   <input
+      type="text"
+      id="search"
+      placeholder="Search..."
+    >
+
+    <h3>Asset Type</h3>
+
+    <select id="assetType">
+      <option value="">All</option>
+      <option value="Actor">Actor</option>
+      <option value="Policy">Policy</option>
+      <option value="Capacity">Capacity</option>
+      <option value="Project">Project</option>
+    </select>
+
+    <h3>Topic</h3>
+
+    <select id="topic">
+      <option value="">All</option>
+      <option value="AI Policy">AI Policy</option>
+      <option value="Cybersecurity">Cybersecurity</option>
+      <option value="Digital Government">Digital Government</option>
+    </select>
+
+  </aside>
+
+  <section id="map"></section>
+
+</main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
